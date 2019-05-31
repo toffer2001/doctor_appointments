@@ -1,0 +1,8 @@
+<%= @doctor.id ? "Edit Doctor" : "Create New Doctor" %>
+
+<%= form_for @doctor do |f| %>
+  <%=f.label :name %>
+  <%=f.text_field :name, required: true %>
+  
+  <%=f.submit  %>
+<% end %>
