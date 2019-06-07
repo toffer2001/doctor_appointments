@@ -6,8 +6,6 @@ resources :users do
   resources :appointments
 end
 
-resources :doctors do
-  resources :appointments
-end
+resources :doctors
 
 end

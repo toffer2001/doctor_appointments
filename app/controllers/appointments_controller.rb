@@ -24,9 +24,9 @@ before_action :set_user
   end
 
   def destroy
-    @appointment = @user.appointment.find(params[:id])
+    @appointment = @user.appointments.find(params[:id])
     @appointment.destroy
-    redirect_to user.appointments_path(@user)
+    redirect_to user_appointments_path(@user)
 
   end
 
